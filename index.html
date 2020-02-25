@@ -1,0 +1,82 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/united.bootstrap.min.css">
+    <title>Assignment-1</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand">Assignment-1</span>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="form-horizontal" id="nameform">
+        <div class="form-group">
+            <label for="studentname" class="col-sm-2 control-label">Student Name</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="studentname" placeholder="Student Name" required/>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="age" class="col-sm-2 control-label">Age</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="age"  min="5" max="20" placeholder="Age between 5 to 20" required/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="class" class="col-sm-2 control-label">Class</label>
+            <div class="col-sm-2">
+                <input type="number" class="form-control" id="class"  placeholder="Student class" required/>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="favSubject" class="col-sm-2 control-label">Favourite Subject</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="favSubject" placeholder="Favourite Subject" required/>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="schoolName" class="col-sm-2 control-label">School Name</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="schoolName" placeholder="School Name" required/>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" id="addStudent">Add Student</button>
+                
+            </div>
+        </div>
+    </div>    
+    <div class="form-horizontal" id="searchSch">
+        <div class="form-group">
+            <label for="searchSchool" class="col-sm-2 control-label">search</label>
+            <div class="col-sm-2">
+                <input type="text" class="form-control" id="searchSchool" placeholder="search School" required/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" id="search">Search</button>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-horizontal" id="result"></div>
+    
+    <!-- add script tags here -->
+    <script src="bundle.js"></script>
+
+</body>
+</html>
